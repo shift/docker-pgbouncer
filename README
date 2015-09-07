@@ -1,0 +1,14 @@
+# PgBouncer
+
+Docker image inheritance:
+ * shift/ubuntu:15.04
+ * ubuntu:15.04
+
+## Volumes
+
+None
+
+## Ports
+
+None
+
