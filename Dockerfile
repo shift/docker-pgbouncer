@@ -6,7 +6,8 @@ ADD ./pgbouncer_1.6.1-1_amd64.deb /tmp/pgbouncer_1.6.1-1_amd64.deb
 RUN apt-get update \
     && apt-get install --yes libc-ares2 libevent-2.0-5 \
     && dpkg -i /tmp/pgbouncer_1.6.1-1_amd64.deb \
-    && /usr/sbin/useradd postgres
+    && /usr/sbin/useradd postgres \
+    && id postgres
 
 USER postgres
 VOLUME /config
